@@ -71,13 +71,13 @@ def get_filenames_from_folder(
         return None
 
 folder_a_path : str = (
-    "D:/job.leonardo-project/1-project/stitching-images/input_a"
+    "input_a"
 )
 folder_b_path : str = (
-    "D:/job.leonardo-project/1-project/stitching-images/input_b"
+    "input_b"
 )
 folder_c_path : str = (
-    "D:/job.leonardo-project/1-project/stitching-images/output"
+    "output"
 )
 images_a_names : list = get_filenames_from_folder(
     os.path.normpath(folder_a_path)
