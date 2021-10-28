@@ -76,27 +76,27 @@ def get_filenames_from_folder(
 
 def crop_left_image(image : Image.Image):
 
-    left = 920
-    top = 248
-    right = 1880
-    bottom = 1328
+    left = 480
+    top = 408
+    right = 720
+    bottom = 542
 
     return image.crop((left, top, right, bottom))
 
 def crop_right_image(image : Image.Image):
 
-    left = 3720
-    top = 248
-    right = 4680
-    bottom = 1328
+    left = 2400
+    top = 408
+    right = 2640
+    bottom = 542
 
     return image.crop((left, top, right, bottom))
 
 folder_a_path : str = (
-    "D:/job.leonardo-project/1-project/cropping-images/input_a"
+    "input_a"
 )
 folder_c_path : str = (
-    "D:/job.leonardo-project/1-project/cropping-images/output"
+    "output"
 )
 images_a_names : list = get_filenames_from_folder(
     os.path.normpath(folder_a_path)
