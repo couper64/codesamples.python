@@ -75,4 +75,4 @@ for i in tqdm(range(len(images_a_names))):
     image_a_path : str = os.path.join(folder_a_path, image_a_name)
     image_c_path : str = os.path.join(folder_c_path, image_c_name)
     image_a : Image.Image = Image.open(image_a_path)
-    scale(image_a, 4).save(image_c_path)
+    scale(image_a, 2).save(image_c_path)
